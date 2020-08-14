@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count</title>
+    <a href="{% url  'home' %}">Let's start again</a>
+    <h1>Your Text:</h1>
+    <br/>
+    {{fulltext}}
+    <h1>Total Word Count is:</h1>
+    <br/>
+    {{count}}
+    <br/>
+    {% for word, count in dict%}
+    <b>{{word}}</b> appears {{count}} times
+    <br/>
+    {%endfor%}
+</head>
+<body>
+
+</body>
+</html>
